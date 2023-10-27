@@ -1,0 +1,10 @@
+{
+  "stickies": [
+    "ambient.T",
+    "battery.core.capacity.Q_cap_cell_nom"
+  ],
+  "stickyPositions": [],
+  "plots": [],
+  "version": "1",
+  "name": "ParameterSweep"
+}

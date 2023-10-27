@@ -1,0 +1,75 @@
+{
+  "name": "Training",
+  "format": "1.0.0",
+  "dependencies": [
+    {
+      "name": "Modelica",
+      "versionSpecifier": "4.0.0"
+    },
+    {
+      "name": "Hydraulics",
+      "versionSpecifier": "4.19.0+build.9"
+    },
+    {
+      "name": "Modelon",
+      "versionSpecifier": "4.3.0+build.20"
+    },
+    {
+      "name": "Electrification",
+      "versionSpecifier": "1.10.0+build.22"
+    }
+  ],
+  "content": [
+    {
+      "relpath": "ImpactIntroduction/TrainingPack",
+      "contentType": "MODELICA",
+      "name": "TrainingPack",
+      "defaultDisabled": false,
+      "id": "ad1199843d7b49c483283e52763fc79a"
+    },
+    {
+      "relpath": "ImpactIntroduction/ImpactTrainingSolutions",
+      "contentType": "MODELICA",
+      "name": "ImpactTrainingSolutions",
+      "defaultDisabled": false,
+      "id": "a66b3657b58243c9a13ed286f474d372"
+    },
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "defaultDisabled": false,
+      "id": "1e5d34e1b20c42a78d743ad908319a97"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "defaultDisabled": false,
+      "id": "9d35020abecb4466b3c74e96f3257229"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "defaultDisabled": false,
+      "id": "96efa4846b59469788c99e5c101eeb4d"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "defaultDisabled": false,
+      "id": "178fa4e270be419b831052a01a35d471"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "defaultDisabled": false,
+      "id": "c01bd4ebc5c5463dacf4b2abab835088"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "defaultDisabled": false,
+      "id": "ee50678d0edc4ea9877ea7240bd4e728"
+    }
+  ],
+  "executionOptions": []
+}

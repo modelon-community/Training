@@ -1,0 +1,10 @@
+{
+  "stickies": [
+    "p_b_nominal",
+    "N_nominal"
+  ],
+  "stickyPositions": [],
+  "plots": [],
+  "version": "1",
+  "name": "Pump_Parameters"
+}

@@ -1,0 +1,10 @@
+{
+  "stickies": [
+    "dp_nominal",
+    "m_flow_nominal"
+  ],
+  "stickyPositions": [],
+  "plots": [],
+  "version": "1",
+  "name": "Valve_Parameters"
+}

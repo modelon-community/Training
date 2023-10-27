@@ -1,0 +1,74 @@
+{
+  "stickies": [
+    "system.T_ambient"
+  ],
+  "stickyPositions": [
+    {
+      "component": "system",
+      "x": -32.74675,
+      "y": 121.05063
+    }
+  ],
+  "plots": [
+    {
+      "variables": [
+        "tank.level"
+      ],
+      "colors": {
+        "tank.level": [
+          "#d62728",
+          "#8c564b"
+        ]
+      },
+      "x": 133.17346,
+      "y": 159.6182,
+      "width": 500.0,
+      "height": 300.0,
+      "title": "Tank Level"
+    },
+    {
+      "variables": [
+        "sensor_m_flow.m_flow"
+      ],
+      "colors": {
+        "sensor_m_flow.m_flow": [
+          "#9467bd",
+          "#e377c2"
+        ]
+      },
+      "x": 133.17346,
+      "y": -43.309402,
+      "width": 500.0,
+      "height": 300.0,
+      "title": "Mas Flow"
+    },
+    {
+      "variables": [
+        "sensor_T_forward.T",
+        "sensor_T_return.T",
+        "T_ambient.T"
+      ],
+      "colors": {
+        "sensor_T_forward.T": [
+          "#1f77b4",
+          "#7f7f7f"
+        ],
+        "sensor_T_return.T": [
+          "#ff7f0e",
+          "#bcbd22"
+        ],
+        "T_ambient.T": [
+          "#2ca02c",
+          "#17becf"
+        ]
+      },
+      "x": 130.83722,
+      "y": 59.51799,
+      "width": 500.0,
+      "height": 300.0,
+      "title": "Temperature"
+    }
+  ],
+  "version": "1",
+  "name": "MySystemView"
+}

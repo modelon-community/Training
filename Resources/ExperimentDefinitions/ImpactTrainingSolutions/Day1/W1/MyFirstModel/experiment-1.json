@@ -1,0 +1,45 @@
+{
+  "version": "1",
+  "id": "998f04e720d84035a5ed672e3a431e1a",
+  "experiment": {
+    "base": {
+      "analysis": {
+        "variableFilters": [],
+        "selectedType": "dynamic",
+        "choices": [
+          {
+            "type": "dynamic",
+            "parameters": {
+              "final_time": 2.0
+            },
+            "simulationOptions": {},
+            "solverOptions": {},
+            "compilerOptions": {},
+            "runtimeOptions": {}
+          },
+          {
+            "type": "steady state",
+            "parameters": {},
+            "simulationOptions": {},
+            "solverOptions": {},
+            "compilerOptions": {},
+            "runtimeOptions": {}
+          }
+        ]
+      },
+      "modifiers": {
+        "variables": [
+          {
+            "name": "springDamper.d",
+            "expression": "0.5"
+          }
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "created": "2022-01-25T14:58:03.081Z",
+    "lastModified": "2022-01-25T14:58:03.081Z",
+    "name": "Experiment 1"
+  }
+}

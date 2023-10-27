@@ -1,0 +1,38 @@
+{
+  "stickies": [],
+  "stickyPositions": [],
+  "plots": [
+    {
+      "variables": [
+        "elasticShaft.springDamper.tau"
+      ],
+      "colors": {
+        "elasticShaft.springDamper.tau": [
+          "#2ca02c"
+        ]
+      },
+      "x": -69.18239,
+      "y": 84.125786,
+      "width": 500.0,
+      "height": 300.0,
+      "title": "Plot 1"
+    },
+    {
+      "variables": [
+        "elasticShaft.springDamper.phi_rel"
+      ],
+      "colors": {
+        "elasticShaft.springDamper.phi_rel": [
+          "#d62728"
+        ]
+      },
+      "x": -67.27987,
+      "y": -18.229559,
+      "width": 500.0,
+      "height": 300.0,
+      "title": "Plot 2"
+    }
+  ],
+  "version": "1",
+  "name": "Test Rig"
+}
