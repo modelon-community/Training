@@ -19,11 +19,15 @@ package ComponentDesign
             annotation(Icon(coordinateSystem(preserveAspectRatio = false,extent = {{-100.0,-100.0},{100.0,100.0}}),graphics = {Rectangle(fillColor={230,230,230},fillPattern=FillPattern.Solid,extent={{-100.0,-100.0},{100.0,100.0}}),Text(lineColor={0,0,255},extent={{-150,150},{150,110}},textString="%name"),Rectangle(origin={0,-3},extent={{-86.79775280898876,15.00684600868917},{86,-15}},fillPattern=FillPattern.Solid,fillColor={155,155,155})}),Documentation(info = "<html><p>This is an elastic shaft.</p></html>"));
         end ElasticShaft;
 model LumpedIsolation
-    .Modelica.Thermal.HeatTransfer.Components.ThermalConductor innerLayer(G = G_Inner) annotation(Placement(transformation(extent = {{22.0,-10.0},{42.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
-    .Modelica.Thermal.HeatTransfer.Components.ThermalConductor outerLayer(G = G_Outer) annotation(Placement(transformation(extent = {{-46.0,-10.0},{-26.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
-    .Modelica.Thermal.HeatTransfer.Components.HeatCapacitor isolationHeatCapacity(T(start = 283.15),C = C_Isolation) annotation(Placement(transformation(extent = {{-10.0,8.0},{10.0,28.0}},rotation = 0.0,origin = {0.0,0.0})));
+    .Modelica.Thermal.HeatTransfer.Components.ThermalConductor innerLayer(G = G_inner) annotation(Placement(transformation(extent = {{22.0,-10.0},{42.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
+    .Modelica.Thermal.HeatTransfer.Components.ThermalConductor outerLayer(G = G_outer) annotation(Placement(transformation(extent = {{-46.0,-10.0},{-26.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
+    .Modelica.Thermal.HeatTransfer.Components.HeatCapacitor isolationHeatCapacity(T(start = 283.15),C = C_isolation) annotation(Placement(transformation(extent = {{-10.0,8.0},{10.0,28.0}},rotation = 0.0,origin = {0.0,0.0})));
     .Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a port_a annotation(Placement(transformation(extent = {{-110.0,-10.0},{-90.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
     .Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_b port_b annotation(Placement(transformation(extent = {{90.0,-10.0},{110.0,10.0}},rotation = 0.0,origin = {0.0,0.0})));
+            parameter .Modelica.Units.SI.ThermalConductance G_inner "Thermal conductance on inner side of material" annotation(Dialog(group = Thermal));
+            parameter .Modelica.Units.SI.ThermalConductance G_outer "Thermal conductance on outer side of material" annotation(Dialog(group = Thermal));
+            parameter .Modelica.Units.SI.HeatCapacity C_isolation annotation(Dialog(group = Thermal));
+   
 equation
     connect(outerLayer.port_b,isolationHeatCapacity.port) annotation(Line(points = {{-26,0},{0,0},{0,8}},color = {191,0,0}));
     connect(isolationHeatCapacity.port,innerLayer.port_a) annotation(Line(points = {{0,8},{0,0},{22,0}},color = {191,0,0}));
@@ -51,7 +55,7 @@ model TestBench
     .Modelica.Thermal.HeatTransfer.Sources.PrescribedTemperature outsideTemperature annotation(Placement(transformation(extent = {{-60,-10},{-40,10}},origin = {0,0},rotation = 0)));
 equation
     connect(sine.y,outsideTemperature.T) annotation(Line(points = {{-79,0},{-62,0}},color = {0,0,127}));
-    connect(innerTemperature.port,wallSegment.port_b) annotation(Line(points = {{34,-1.2246467991473533e-15},{10,0}},color = {191,0,0}));
+    connect(innerTemperature.port,wallSegment.port_b) annotation(Line(points = {{34,-1.2246467991473533e-15},{10,-1.2246467991473533e-15},{10,0}},color = {191,0,0}));
     connect(outsideTemperature.port,wallSegment.port_a) annotation(Line(points = {{-40,0},{-10,0}},color = {191,0,0}));
     annotation(Icon(coordinateSystem(preserveAspectRatio = false,extent = {{-100.0,-100.0},{100.0,100.0}}),graphics = {Rectangle(lineColor={0,0,0},fillColor={230,230,230},fillPattern=FillPattern.Solid,extent={{-100.0,-100.0},{100.0,100.0}}),Text(lineColor={0,0,255},extent={{-150,150},{150,110}},textString="%name")}));
 end TestBench;
