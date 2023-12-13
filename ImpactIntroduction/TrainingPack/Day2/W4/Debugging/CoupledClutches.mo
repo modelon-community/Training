@@ -1,4 +1,4 @@
-within ImpactTrainingSolutions.Day2.W4;
+within TrainingPack.Day2.W4.Debugging;
 
 model CoupledClutches "Drive train with 3 dynamically coupled clutches"
   extends .Modelica.Icons.Example;

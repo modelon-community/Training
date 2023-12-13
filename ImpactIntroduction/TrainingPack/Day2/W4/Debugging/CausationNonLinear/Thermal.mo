@@ -1,4 +1,4 @@
-within TrainingPack.Day2.W4.CausationNonLinear;
+within TrainingPack.Day2.W4.Debugging.CausationNonLinear;
 
 model Thermal
     .Modelica.Thermal.HeatTransfer.Sources.FixedTemperature fixedTemperature(T = 293) annotation(Placement(transformation(extent = {{-28.042337975122024,37.38317533619919},{-48.042337975122024,57.38317533619919}},origin = {0.0,0.0},rotation = 0.0)));

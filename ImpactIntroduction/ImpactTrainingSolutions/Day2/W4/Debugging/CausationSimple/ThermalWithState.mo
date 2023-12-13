@@ -1,4 +1,4 @@
-within ImpactTrainingSolutions.Day2.W4.CausationSimple;
+within ImpactTrainingSolutions.Day2.W4.Debugging.CausationSimple;
 
 model ThermalWithState
     .Modelica.Thermal.HeatTransfer.Components.ThermalResistor thermalResistor(R = 1) annotation(Placement(transformation(extent = {{-36.28530499933013,3.7146950006698702},{-23.71469500066987,16.28530499933013}},origin = {0.0,0.0},rotation = 0.0)));

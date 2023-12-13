@@ -1,4 +1,4 @@
-within ImpactTrainingSolutions.Day2.W4.CausationNonLinear;
+within TrainingPack.Day2.W4.Debugging.CausationNonLinear;
 
 model ThermalWithState
     .Modelica.Thermal.HeatTransfer.Components.BodyRadiation bodyRadiation(Gr = 1) annotation(Placement(transformation(extent = {{-37.17455621301775,-3.00295857988165},{-17.17455621301775,16.99704142011835}},origin = {0.0,0.0},rotation = 0.0)));

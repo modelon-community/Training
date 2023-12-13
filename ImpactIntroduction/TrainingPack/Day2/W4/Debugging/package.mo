@@ -1,4 +1,4 @@
 within TrainingPack.Day2.W4;
-package CausationSimple
+package Debugging
     extends .Modelica.Icons.Package;
-end CausationSimple;
+end Debugging;

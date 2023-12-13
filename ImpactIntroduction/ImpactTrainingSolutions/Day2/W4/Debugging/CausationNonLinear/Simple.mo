@@ -1,4 +1,4 @@
-within TrainingPack.Day2.W4.CausationNonLinear;
+within ImpactTrainingSolutions.Day2.W4.Debugging.CausationNonLinear;
 
 model Simple
     Real x;
