@@ -1,6 +1,8 @@
 {
   "name": "Training",
   "format": "1.0.0",
+  "version": "1.0.0",
+  "icon": ".impact/icon.png",
   "dependencies": [
     {
       "name": "Electrification",
