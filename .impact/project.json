@@ -1,16 +1,15 @@
 {
   "name": "Training",
-  "format": "1.0.0",
   "version": "1.0.0",
-  "icon": ".impact/icon.png",
+  "format": "1.0.0",
   "dependencies": [
     {
       "name": "Electrification",
-      "versionSpecifier": "1.11.0+build.54"
+      "versionSpecifier": "2.1.0"
     },
     {
       "name": "Modelon",
-      "versionSpecifier": "4.4.0+build.50"
+      "versionSpecifier": "6.0.0"
     },
     {
       "name": "Modelica",
@@ -18,7 +17,7 @@
     },
     {
       "name": "Hydraulics",
-      "versionSpecifier": "4.20.0+build.55"
+      "versionSpecifier": "4.24.0"
     }
   ],
   "content": [
@@ -73,5 +72,6 @@
       "id": "ee50678d0edc4ea9877ea7240bd4e728"
     }
   ],
-  "executionOptions": []
+  "executionOptions": [],
+  "icon": ".impact/icon.png"
 }
