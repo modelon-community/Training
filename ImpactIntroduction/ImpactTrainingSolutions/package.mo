@@ -1,4 +1,4 @@
 package ImpactTrainingSolutions
     extends Modelica.Icons.Package;
-    annotation(uses(Modelica(version = "4.0.0"),Modelon(version="4.4"),Electrification(version="1.11")));
+    annotation(uses(Modelica(version = "4.0.0"),Modelon(version="6.0"),Electrification(version="2.1")));
 end ImpactTrainingSolutions;
